@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
   orders.innerHTML = "";
   for (let key in localStorage) {
     const productData = localStorage.getItem(`${key}`);
-    console.log("productData", productData);
+
     if (productData) {
       const newProduct = JSON.parse(productData);
-      console.log("newProducr:", newProduct);
+
       const order = document.createElement("div");
       order.setAttribute("data-id", `${key}`);
       order.className = "order-card";

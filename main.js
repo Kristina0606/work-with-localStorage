@@ -112,8 +112,7 @@ function addToStorage(event) {
     name: productName,
     count: productPrice,
   };
-  console.log(newData);
-  console.log(JSON.stringify(newData));
+
   localStorage.setItem(`${productId}`, JSON.stringify(newData));
   counterElement.innerHTML = localStorage.length;
 }
